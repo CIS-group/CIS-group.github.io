@@ -16,6 +16,94 @@
 <!-- Theme skin -->
 <link href="skins/default.css" rel="stylesheet" />
 
+```html
+<style>
+	/* Latest News */
+	.latest-news {
+		padding: 22px 0 30px;
+		background: #fff;
+	}
+
+	.latest-news-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 5px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.latest-news-header h2 {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 700;
+		color: #222;
+		text-transform: uppercase;
+	}
+
+	.latest-news-header a {
+		font-size: 12px;
+		color: #4b9ac7;
+	}
+
+	.latest-news-header a:hover {
+		color: #286f99;
+		text-decoration: none;
+	}
+
+	.latest-news-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.latest-news-list li {
+		display: flex;
+		align-items: center;
+		padding: 11px 0;
+		border-bottom: 1px solid #eee;
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+	.latest-news-list li:last-child {
+		border-bottom: 0;
+	}
+
+	.latest-news-date {
+		flex: 0 0 105px;
+		color: #888;
+		font-size: 12px;
+	}
+
+	.latest-news-text {
+		flex: 1;
+		color: #333;
+	}
+
+	.latest-news-text a {
+		color: #333;
+	}
+
+	.latest-news-text a:hover {
+		color: #4b9ac7;
+		text-decoration: none;
+	}
+
+	@media (max-width: 600px) {
+		.latest-news-list li {
+			display: block;
+		}
+
+		.latest-news-date {
+			display: block;
+			margin-bottom: 4px;
+		}
+	}
+</style>
+```
+
+
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
